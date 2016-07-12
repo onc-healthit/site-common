@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+   http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="statistics" transaction-type="RESOURCE_LOCAL">
+	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>org.sitenv.common.statistics.entity.CcdaValidationEntity</class>
+		<class>org.sitenv.common.statistics.entity.CcdaServiceCallEntity</class>
+		<class>org.sitenv.common.statistics.entity.DateItemEntity</class>
+		<class>org.sitenv.common.statistics.entity.SmartCcdaValidationEntity</class>
+		<class>org.sitenv.common.statistics.entity.CcdaDownloadEntity</class>
+		<class>org.sitenv.common.statistics.entity.CcdaReferenceDownloadEntity</class>
+		<class>org.sitenv.common.statistics.entity.QrdaValidationEntity</class>
+		<class>org.sitenv.common.statistics.entity.DirectReceiveEntity</class>
+		<class>org.sitenv.common.statistics.entity.DirectTrustUploadEntity</class>
+		<class>org.sitenv.common.statistics.entity.PdtiTestCaseEntity</class>
+		<class>org.sitenv.common.statistics.entity.PdtiTestGroupEntity</class>
+		<class>org.sitenv.common.statistics.entity.CcdaWeeklyCountsEntity</class>
+		<class>org.sitenv.common.statistics.entity.QrdaWeeklyCountsEntity</class>
+		<class>org.sitenv.common.statistics.entity.PdtiWeeklyCountsEntity</class>
+		<class>org.sitenv.common.statistics.entity.DirectWeeklyCountsEntity</class>
+		<class>org.sitenv.common.statistics.entity.AggregateWeeklyCountsEntity</class>
+		<class>org.sitenv.common.statistics.entity.DcdtHostingVerificationEntity</class>
+		<class>org.sitenv.common.statistics.entity.DirectLogCountsEntity</class>
+		<class>org.sitenv.common.statistics.entity.XdrReceiveEntity</class>
+		<class>org.sitenv.common.statistics.entity.XdrSendSearchEntity</class>
+		<class>org.sitenv.common.statistics.entity.SmtpReceiveEntity</class>
+		<class>org.sitenv.common.statistics.entity.SmtpSearchEntity</class>
+		<class>org.sitenv.common.statistics.entity.SmtpLogCountsEntity</class>
+		<class>org.sitenv.common.statistics.entity.SmtpWeeklyCountsEntity</class>
+		<properties>
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.connection.datasource" value="java:comp/env/jdbc/site_statistics"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.flush_before_completion" value="true" />
+			<property name="hibernate.c3p0.min_size" value="5" />
+			<property name="hibernate.c3p0.max_size" value="20" />
+			<property name="hibernate.c3p0.timeout" value="300" />
+			<property name="hibernate.c3p0.max_statements" value="50" />
+			<property name="hibernate.c3p0.idle_test_period" value="3000" />
+		</properties>
+		
+		
+	</persistence-unit>
+
+</persistence>

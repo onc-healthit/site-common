@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>CCDA Document Types Selector</description>
+	<tlib-version>2.1</tlib-version>
+	<short-name>sitetags</short-name>
+	<uri>http://sitenv.org/tags</uri>
+	<tag>
+		<name>ccdaTypesSelector</name>
+		<tag-class>org.sitenv.common.utilities.tags.CcdaDocumentTypes</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description>unique name of this ccda document type selector</description>
+			<name>name</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<description>unique id of this ccda document type selector</description>
+			<name>id</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<description>style class for this selector</description>
+			<name>styleClass</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<description>tab index of this ccda document type selector</description>
+			<name>tabIndex</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+</taglib>
