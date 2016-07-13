@@ -39,6 +39,16 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>external.atlassian.jgitflow</groupId>
+				<artifactId>jgitflow-maven-plugin</artifactId>
+				<configuration>
+					<noDeploy>true</noDeploy>
+					<allowUntracked>true</allowUntracked>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<allowSnapshots>true</allowSnapshots>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
